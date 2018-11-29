@@ -1,0 +1,33 @@
+.welcome {
+  $self: &;
+  background-repeat: no-repeat;
+  background-image: url("../assets/images/png/welcome-bg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  margin-bottom: 100px;
+
+  &__content {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-bottom: 50px;
+    padding-top: 20px;
+
+    h2 {
+      font-family: "Roboto Slab", Montserrat;
+      font-size: 48px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-family: "Roboto Slab", Montserrat;
+      font-size: 20px;
+      text-transform: capitalize;
+      margin-bottom: 60px;
+    }
+  }
+}

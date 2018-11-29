@@ -1,0 +1,85 @@
+#sticky {
+  //position: sticky;
+  top: 30px;
+}
+
+.header {
+  $self: &;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  background: transparent;
+  text-transform: capitalize;
+  &__logo {
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    transition: all 0.3s;
+    padding-left: 40px;
+  }
+
+  &__menu {
+    padding-top: 5px;
+    padding-right: 40px;
+    @include medium-large-screens {
+      padding-right: 0;
+      padding-top: 50px;
+      height: 0;
+      overflow: hidden;
+    }
+    #{ $self }__item {
+      margin-right: 25px;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.35px;
+      transition: all 0.3s;
+      .header__link {
+        color: #ffffff;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+
+      @include medium-large-screens {
+        display: block;
+        text-align: right;
+
+        &:last-child {
+          margin-right: 25px;
+        }
+      }
+    }
+
+    &.open {
+      height: auto;
+    }
+  }
+
+  .fa-bars,
+  .fa-times {
+    margin-top: -45px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 30px;
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    color: #ffffff;
+
+    @include medium-large-screens {
+      display: inline-block;
+    }
+  }
+}
+
+.changeColor {
+  background-color: rgba(0, 0, 0, 0.5);
+}

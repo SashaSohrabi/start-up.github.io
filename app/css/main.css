@@ -1,3 +1,6 @@
 body {
   background: #ffff00;
   text-align: center; }
+
+body h1 {
+  color: red; }

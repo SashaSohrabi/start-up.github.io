@@ -7,25 +7,46 @@
   background-color: #f8f8f8;
   margin-bottom: 100px;
 
-  &__title {
-    color: #555555;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 60px;
-    &::after {
-      content: "";
-      height: 2px;
-      width: 50px;
-      background-color: #555555;
+  &__hov {
+    position: absolute;
+    height: 250px;
+    width: 263px;
+    background-color: rgba(85, 85, 85, 0.5);
+
+    .icons {
       position: absolute;
-      top: 150px;
+      display: flex;
+      justify-content: space-between;
+      width: 120px;
+      top: 190px;
       left: 50%;
       transform: translateX(-50%);
+      .icon {
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        transition: all 0.3s;
+        &:hover {
+          background-color: #c0301c;
+        }
+        i {
+          padding-top: 25%;
+          color: #ffffff;
+        }
+      }
     }
   }
+
+  .inner-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .inner-wrapper:hover .about__hov {
+    top: 0;
+    left: 0;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -50,4 +71,83 @@
       }
     }
   }
+
+  &__slide {
+    padding: 70px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .slide__pic {
+      margin: 10px;
+    }
+
+    .slide__title {
+      color: #555555;
+      margin-top: 20px;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-transform: uppercase;
+    }
+
+    .slide__desc {
+      color: #555555;
+      font-family: "Roboto Slab";
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
+
+.slick-next {
+  right: 10px;
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 10px;
+  z-index: 10;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  top: 40%;
+  display: block;
+  width: 35px;
+  height: 38px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #c0301c;
+  &:hover {
+    background: #c0301c;
+  }
+  &:focus {
+    background: #c0301c;
+  }
+}
+
+.slick-prev::before {
+  content: url("../assets/images/svg/angle-left.svg");
+}
+
+.slick-next::before {
+  content: url("../assets/images/svg/angle-right.svg");
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 15px;
+  line-height: 1;
+  opacity: 1;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

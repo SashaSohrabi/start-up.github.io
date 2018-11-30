@@ -518,6 +518,7 @@ html body .sc-desc {
   margin-bottom: 25px; }
 
 .latest-work__images .latest-work__img .img-container .hov__link {
+  display: inline-block;
   padding: 10px 25px;
   background-color: #ffffff;
   color: #c0301c;
@@ -526,8 +527,28 @@ html body .sc-desc {
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
-  letter-spacing: 1.4px; }
+  letter-spacing: 1.4px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.latest-work__images .latest-work__img .img-container .hov__link:hover {
+  -webkit-transform: skew(-10deg);
+      -ms-transform: skew(-10deg);
+          transform: skew(-10deg); }
 
 .latest-work__images .latest-work__img .img-container:hover .hov {
-  top: 0;
-  left: 0; }
+  -webkit-animation: uprise 0.6s forwards;
+          animation: uprise 0.6s forwards; }
+
+@-webkit-keyframes uprise {
+  from {
+    top: 100%; }
+  to {
+    top: 0; } }
+
+@keyframes uprise {
+  from {
+    top: 100%; }
+  to {
+    top: 0; } }

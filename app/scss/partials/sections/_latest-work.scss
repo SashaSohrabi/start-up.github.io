@@ -1,0 +1,84 @@
+.latest-work {
+  $self: &;
+
+  &__menu {
+    #{ $self }__menu-item {
+      margin: 0 10px 70px;
+
+      .latest-work__menu-link {
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        &:hover {
+          color: #c0301c;
+        }
+      }
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    #{$self}__img {
+      flex: 0 0 33%;
+      padding: 10px;
+
+      .img-container {
+        overflow: hidden;
+        position: relative;
+
+        .hov {
+          position: absolute;
+          height: 320px;
+          width: 360px;
+          background-color: rgba(198, 48, 28, 0.7);
+
+          &__content {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+
+          &__title {
+            color: #ffffff;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 15px;
+          }
+
+          &__sub-title {
+            color: #ffffff;
+            font-family: "Roboto Slab";
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 25px;
+          }
+
+          &__link {
+            padding: 10px 25px;
+            background-color: #ffffff;
+            color: #c0301c;
+            font-family: "Roboto Slab";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+          }
+        }
+
+        &:hover .hov {
+          top: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

@@ -450,3 +450,84 @@ html body .sc-desc {
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.latest-work__menu .latest-work__menu-item {
+  margin: 0 10px 70px; }
+
+.latest-work__menu .latest-work__menu-item .latest-work__menu-link {
+  color: #555555;
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+
+.latest-work__menu .latest-work__menu-item .latest-work__menu-link:hover {
+  color: #c0301c; }
+
+.latest-work__images {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.latest-work__images .latest-work__img {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33%;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  padding: 10px; }
+
+.latest-work__images .latest-work__img .img-container {
+  overflow: hidden;
+  position: relative; }
+
+.latest-work__images .latest-work__img .img-container .hov {
+  position: absolute;
+  height: 320px;
+  width: 360px;
+  background-color: rgba(198, 48, 28, 0.7); }
+
+.latest-work__images .latest-work__img .img-container .hov__content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.latest-work__images .latest-work__img .img-container .hov__title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 15px; }
+
+.latest-work__images .latest-work__img .img-container .hov__sub-title {
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 25px; }
+
+.latest-work__images .latest-work__img .img-container .hov__link {
+  padding: 10px 25px;
+  background-color: #ffffff;
+  color: #c0301c;
+  font-family: "Roboto Slab";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px; }
+
+.latest-work__images .latest-work__img .img-container:hover .hov {
+  top: 0;
+  left: 0; }

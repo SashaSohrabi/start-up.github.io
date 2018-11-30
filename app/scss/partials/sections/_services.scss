@@ -1,0 +1,64 @@
+.services {
+  $self: &;
+  text-align: center;
+
+  &__container {
+    margin-top: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    @include small-screens {
+      flex-direction: column;
+    }
+    #{ $self }__content {
+      flex: 0 0 33%;
+      max-width: 33%;
+      padding: 0 22.5px;
+      @include small-screens {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 30px;
+      }
+
+      &-icon {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 2px solid #dddddd;
+        margin-bottom: 30px;
+        transition: 0.3s;
+        svg {
+          position: relative;
+          top: 50%;
+          transform: translateY(-50%);
+          fill: #c0301c;
+        }
+        &:hover {
+          background-color: #c0301c;
+          svg {
+            fill: #ffffff;
+          }
+        }
+      }
+
+      &-title {
+        color: #555555;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      &-desc {
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+  }
+}

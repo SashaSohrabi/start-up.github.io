@@ -552,3 +552,22 @@ html body .sc-desc {
     top: 100%; }
   to {
     top: 0; } }
+
+.work-contact {
+  background: url("../assets/images/png/our-work-bg.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  margin: 100px 0; }
+
+.work-contact__content {
+  padding: 100px 0;
+  text-align: center; }
+
+.work-contact__title {
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-family: "Roboto Slab";
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 44px; }

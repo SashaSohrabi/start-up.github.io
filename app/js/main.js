@@ -1,3 +1,10 @@
+// ============ HAMBURGER MENU ============
+$(document).ready(function() {
+  $(".fa-bars").click(function() {
+    $(".header__menu").toggleClass("open");
+  });
+});
+
 // ============ SLICK ============
 $(".about__slide").slick({
   dots: false,

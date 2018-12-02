@@ -60,26 +60,36 @@
 
     &.open {
       height: auto;
+      animation: openMenu 0.3s forwards;
+      z-index: 100;
+      @include medium-large-screens {
+        background: rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .fa-bars,
+    .fa-times {
+      margin-top: -45px;
+      margin-bottom: 10px;
+      position: absolute;
+      right: 30px;
+      display: none;
+      font-size: 40px;
+      cursor: pointer;
+      color: #ffffff;
+
+      @include medium-large-screens {
+        display: inline-block;
+      }
     }
   }
 
-  .fa-bars,
-  .fa-times {
-    margin-top: -45px;
-    margin-bottom: 10px;
-    position: absolute;
-    right: 30px;
-    display: none;
-    font-size: 40px;
-    cursor: pointer;
-    color: #ffffff;
-
-    @include medium-large-screens {
-      display: inline-block;
+  @keyframes openMenu {
+    from {
+      margin-right: -100%;
+    }
+    to {
+      margin-right: 0;
     }
   }
-}
-
-.changeColor {
-  background-color: rgba(0, 0, 0, 0.5);
 }

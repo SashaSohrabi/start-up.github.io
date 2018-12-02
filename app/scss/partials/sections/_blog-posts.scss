@@ -1,0 +1,107 @@
+.blog {
+  $self: &;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    margin-top: 70px;
+    border-bottom: #dddddd 1px solid;
+    transition: 0.3ms;
+    @include medium-screens {
+      flex-direction: column;
+    }
+    #{ $self }__img {
+      @include medium-screens {
+        padding: 0 20px;
+      }
+    }
+    &:last-of-type {
+      margin-top: 0;
+      border-bottom: none;
+    }
+
+    .content {
+      margin-left: 40px;
+      text-align: left;
+      @include medium-screens {
+        padding: 20px;
+        margin-left: 0;
+      }
+      &:hover {
+        .content__title,
+        .content__link,
+        span {
+          color: #c0301c;
+        }
+      }
+
+      &__calendar {
+        width: 76px;
+        height: 76px;
+        border: 2px solid #555555;
+        text-align: center;
+        float: left;
+        margin-right: 30px;
+        color: #777777;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+
+        &--num {
+          line-height: 40px;
+          font-size: 24px;
+          letter-spacing: 2.4px;
+        }
+      }
+      &__title {
+        color: #555555;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      &__sub-title {
+        font-family: "Roboto Slab";
+        font-size: 13px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 24px;
+        color: #777777;
+        padding-bottom: 25px;
+        &--red {
+          color: #c0301c;
+        }
+      }
+
+      &__desc {
+        color: #555555;
+        font-family: "Roboto Slab";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        padding-bottom: 35px;
+        @include medium-screens {
+          text-align: justify;
+        }
+      }
+
+      &__link {
+        color: #777777;
+        font-family: "Roboto Slab";
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1.3px;
+      }
+    }
+  }
+}

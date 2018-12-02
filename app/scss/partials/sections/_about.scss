@@ -9,10 +9,13 @@
 
   &__hov {
     position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
     height: 250px;
     width: 263px;
     background-color: rgba(85, 85, 85, 0.5);
-
+    transition: opacity 0.3s;
     .icons {
       position: absolute;
       display: flex;
@@ -38,13 +41,12 @@
   }
 
   .inner-wrapper {
-    overflow: hidden;
     position: relative;
+    transition: 0.3s;
   }
 
   .inner-wrapper:hover .about__hov {
-    top: 0;
-    left: 0;
+    opacity: 1;
   }
 
   &__container {

@@ -303,9 +303,15 @@ html body .sc-desc {
 
 .about__hov {
   position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
   height: 250px;
   width: 263px;
-  background-color: rgba(85, 85, 85, 0.5); }
+  background-color: rgba(85, 85, 85, 0.5);
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s; }
 
 .about__hov .icons {
   position: absolute;
@@ -340,12 +346,13 @@ html body .sc-desc {
   color: #ffffff; }
 
 .about .inner-wrapper {
-  overflow: hidden;
-  position: relative; }
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
 
 .about .inner-wrapper:hover .about__hov {
-  top: 0;
-  left: 0; }
+  opacity: 1; }
 
 .about__container {
   display: -webkit-box;

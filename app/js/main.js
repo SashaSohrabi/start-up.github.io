@@ -30,3 +30,10 @@ $(".about__slide").slick({
     }
   ]
 });
+$(".brands__slide").slick({
+  dots: true,
+  infinite: true,
+  autoplay: true,
+  arrows: false,
+  autoplaySpeed: 2000
+});

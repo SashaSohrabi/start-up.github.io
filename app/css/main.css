@@ -773,3 +773,244 @@ html body .sc-desc {
 .slick-dots li.slick-active button:before {
   opacity: 1;
   color: #c0301c; }
+
+#contact {
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+.contact {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px; }
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.contact__inner {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+  text-align: left; }
+
+@media only screen and (max-width: 768px) {
+  .contact__inner {
+    text-align: center;
+    margin-bottom: 30px; } }
+
+.contact__inner .contact__address {
+  color: #555555;
+  font-weight: 400; }
+
+.contact__inner .contact__address .contact__icon {
+  font-size: 14px;
+  padding-right: 15px; }
+
+.contact__inner .contact__address .contact__title {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.contact__inner .contact__address .contact__content {
+  padding-left: 25px;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  line-height: 20px; }
+
+.contact__inner .contact__tel {
+  color: #555555;
+  font-weight: 400; }
+
+.contact__inner .contact__tel .contact__icon {
+  font-size: 14px;
+  padding-right: 15px; }
+
+.contact__inner .contact__tel .contact__title {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.contact__inner .contact__tel .contact__content {
+  padding-left: 25px;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  line-height: 20px; }
+
+.contact__inner .contact__tel .contact__content:nth-of-type(2) {
+  padding-left: 0; }
+
+.contact__inner .contact__email {
+  color: #555555;
+  font-weight: 400; }
+
+.contact__inner .contact__email .contact__icon {
+  font-size: 14px;
+  padding-right: 15px; }
+
+.contact__inner .contact__email .contact__title {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase; }
+
+.contact__inner .contact__email .contact__content {
+  padding-left: 25px;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  line-height: 20px; }
+
+.contact__form {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  position: relative; }
+
+@media only screen and (max-width: 768px) {
+  .contact__form {
+    padding: 0 5px; } }
+
+.contact__form input[type="text"],
+.contact__form input[type="email"] {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 48%;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  height: 45px;
+  border: 1px solid #555555;
+  margin-bottom: 20px; }
+
+.contact__form input[type="text"]:focus,
+.contact__form input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #c0301c; }
+
+.contact__form input[type="text"]:nth-of-type(odd),
+.contact__form input[type="email"]:nth-of-type(odd) {
+  margin-right: 2%; }
+
+.contact__form input[type="text"]:nth-of-type(even),
+.contact__form input[type="email"]:nth-of-type(even) {
+  margin-left: 2%; }
+
+.contact__form textarea {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border: 1px solid #555555;
+  margin-bottom: 20px;
+  height: 100px; }
+
+.contact__form textarea:focus {
+  outline: none;
+  border: 1px solid #c0301c; }
+
+.contact__form textarea textarea[placeholder] {
+  padding-top: 20px;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.contact__form button {
+  padding: 17px 36px;
+  background-color: #ffffff;
+  border: 1px solid #555555;
+  color: #555555;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
+
+.contact__form button:focus {
+  outline: none; }
+
+.contact__form button:hover {
+  color: #ffffff;
+  background: #c0301c; }
+
+.contact__form .send-message {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  color: #555555;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px; }
+
+.contact__form .send-message .send-message__asterisk {
+  color: #c0301c; }
+
+.contact__form .invalid-name {
+  color: #c0301c;
+  font-size: 12px;
+  position: absolute;
+  top: -15px;
+  display: none; }
+
+.contact__form .invalid-email {
+  color: #c0301c;
+  font-size: 12px;
+  position: absolute;
+  top: -15px;
+  right: 0;
+  display: none; }
+
+.contact__form .invalid-message {
+  color: #c0301c;
+  font-size: 12px;
+  position: absolute;
+  top: 115px;
+  display: none; }
+
+.contact #invalid-input {
+  border: 1px solid #c0301c;
+  background: rgba(192, 28, 48, 0.3); }
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 14px;
+  line-height: 20px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #c0301c; }

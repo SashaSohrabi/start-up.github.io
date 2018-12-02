@@ -42,3 +42,28 @@
     @content;
   }
 }
+
+// === CONTACT ===
+@mixin contact() {
+  color: #555555;
+  font-weight: 400;
+}
+
+@mixin contact-icon {
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+@mixin contact-title {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+@mixin contact-content {
+  padding-left: 25px;
+  font-family: "Roboto Slab";
+  font-size: 12px;
+  line-height: 20px;
+}

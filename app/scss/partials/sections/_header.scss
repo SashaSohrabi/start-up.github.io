@@ -50,7 +50,8 @@
 
       @include medium-large-screens {
         display: block;
-        text-align: right;
+        text-align: center;
+        margin: 5px 30px;
 
         &:last-child {
           margin-right: 25px;
@@ -67,19 +68,69 @@
       }
     }
 
-    .fa-bars,
-    .fa-times {
-      margin-top: -45px;
-      margin-bottom: 10px;
+    .menu-wrapper {
       position: absolute;
-      right: 30px;
+      right: 45px;
       display: none;
-      font-size: 40px;
+      margin-top: -35px;
+      margin-bottom: 10px;
+      width: $bar-width;
+      height: $bar-height + $bar-spacing * 2;
       cursor: pointer;
-      color: #ffffff;
-
       @include medium-large-screens {
         display: inline-block;
+      }
+
+      .hamburger-menu,
+      .hamburger-menu::after,
+      .hamburger-menu::before {
+        width: $bar-width;
+        height: $bar-height;
+      }
+
+      .hamburger-menu {
+        position: relative;
+        transform: translateY($bar-spacing);
+        background: rgba(255, 255, 255, 1);
+        transition: all 0ms 300ms;
+
+        &.animate {
+          background: rgba(255, 255, 255, 0);
+        }
+      }
+
+      .hamburger-menu::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: $bar-spacing;
+        background: rgba(255, 255, 255, 1);
+        transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+          transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .hamburger-menu::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: $bar-spacing;
+        background: rgba(255, 255, 255, 1);
+        transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
+          transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .hamburger-menu.animate::after {
+        top: 0;
+        transform: rotate(45deg);
+        transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+          transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .hamburger-menu.animate::before {
+        bottom: 0;
+        transform: rotate(-45deg);
+        transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1),
+          transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
     }
   }

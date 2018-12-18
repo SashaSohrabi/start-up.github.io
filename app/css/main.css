@@ -1048,6 +1048,7 @@ html body .sc-desc {
   position: relative;
   left: 20px;
   top: 20px;
+  margin-right: 20px;
   color: #555555;
   font-family: "Roboto Slab";
   font-size: 12px;

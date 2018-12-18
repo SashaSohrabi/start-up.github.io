@@ -62,6 +62,7 @@
     &.open {
       height: auto;
       animation: openMenu 0.3s forwards;
+      position: relative;
       z-index: 100;
       @include medium-large-screens {
         background: rgba(0, 0, 0, 0.5);

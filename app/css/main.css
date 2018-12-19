@@ -116,6 +116,7 @@ html body .sc-desc {
     overflow: hidden; } }
 
 .header__menu .header__item {
+  position: relative;
   margin-right: 25px;
   font-family: Montserrat;
   font-size: 14px;
@@ -132,8 +133,19 @@ html body .sc-desc {
 .header__menu .header__item:last-child {
   margin-right: 0; }
 
-.header__menu .header__item:hover {
-  opacity: 0.7; }
+.header__menu .header__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background: #ffffff;
+  width: 0;
+  height: 2px;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out; }
+
+.header__menu .header__item:hover::after, .header__menu .header__item:focus::after {
+  width: 100%; }
 
 @media only screen and (max-width: 820px) {
   .header__menu .header__item {

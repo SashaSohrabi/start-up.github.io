@@ -776,9 +776,15 @@ html body .sc-desc {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
+.blog__container .blog__img {
+  width: 40%;
+  max-height: 322px;
+  padding: 0 10px; }
+
 @media only screen and (max-width: 768px) {
   .blog__container .blog__img {
-    padding: 0 20px; } }
+    width: 60%;
+    margin: 0 auto; } }
 
 .blog__container:last-of-type {
   margin-top: 0;
@@ -862,7 +868,7 @@ html body .sc-desc {
   letter-spacing: 1.3px; }
 
 .brands {
-  margin-top: 100px;
+  margin-top: 50px;
   padding-top: 100px;
   background-color: #f8f8f8; }
 
@@ -1133,7 +1139,8 @@ html body .sc-desc {
 
 .contact__form button:hover {
   color: #ffffff;
-  background: #c0301c; }
+  background: #c0301c;
+  border: 1px solid #c0301c; }
 
 .contact__form .send-message {
   position: relative;

@@ -12,8 +12,12 @@
       flex-direction: column;
     }
     #{ $self }__img {
+      width: 40%;
+      max-height: 322px;
+      padding: 0 10px;
       @include medium-screens {
-        padding: 0 20px;
+        width: 60%;
+        margin: 0 auto;
       }
     }
     &:last-of-type {

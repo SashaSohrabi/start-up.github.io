@@ -25,10 +25,10 @@
       @include medium-screens {
         font-size: 38px;
       }
-      @include extra-small-screens {
-        font-size: 28px;
-        letter-spacing: 1.5px;
-      }
+      // @include extra-small-screens {
+      //   font-size: 28px;
+      //   letter-spacing: 1.5px;
+      // }
     }
 
     h3 {

@@ -17,5 +17,8 @@
     font-size: 30px;
     font-weight: 400;
     line-height: 44px;
+    @include medium-screens {
+      font-size: 22px;
+    }
   }
 }

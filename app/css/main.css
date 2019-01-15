@@ -381,6 +381,7 @@ html body .sc-desc {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  margin-bottom: 15px;
   text-transform: uppercase; }
 
 .services__container .services__content-desc {
@@ -389,6 +390,11 @@ html body .sc-desc {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px; }
+
+@media only screen and (max-width: 576px) {
+  .services__container .services__content-desc {
+    width: 80%;
+    margin: 0 auto; } }
 
 .p-t {
   padding-top: 100px; }
@@ -596,8 +602,11 @@ html body .sc-desc {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.latest-work__menu {
+  margin-bottom: 70px; }
+
 .latest-work__menu .latest-work__menu-item {
-  margin: 0 10px 70px; }
+  margin: 0 10px; }
 
 .latest-work__menu .latest-work__menu-item .latest-work__menu-link {
   color: #555555;
@@ -608,6 +617,10 @@ html body .sc-desc {
 
 .latest-work__menu .latest-work__menu-item .latest-work__menu-link:hover {
   color: #c0301c; }
+
+@media only screen and (max-width: 480px) {
+  .latest-work__menu .latest-work__menu-item {
+    margin: 0 4px; } }
 
 .latest-work__images {
   display: -webkit-box;

@@ -49,6 +49,7 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
+        margin-bottom: 15px;
         text-transform: uppercase;
       }
 
@@ -58,6 +59,11 @@
         font-size: 14px;
         font-weight: 400;
         line-height: 24px;
+
+        @include small-screens {
+          width: 80%;
+          margin: 0 auto;
+        }
       }
     }
   }

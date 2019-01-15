@@ -2,8 +2,9 @@
   $self: &;
 
   &__menu {
+    margin-bottom: 70px;
     #{ $self }__menu-item {
-      margin: 0 10px 70px;
+      margin: 0 10px;
 
       .latest-work__menu-link {
         color: #555555;
@@ -14,6 +15,9 @@
         &:hover {
           color: #c0301c;
         }
+      }
+      @include extra-small-screens {
+        margin: 0 4px;
       }
     }
   }

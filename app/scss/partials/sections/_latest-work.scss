@@ -30,11 +30,18 @@
       .img-container {
         overflow: hidden;
         position: relative;
+        height: 100%;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
 
         .hov {
           position: absolute;
-          height: 320px;
-          width: 360px;
+          height: 100%;
+          width: 100%;
           background-color: rgba(198, 48, 28, 0.7);
 
           &__content {
@@ -73,6 +80,10 @@
             text-transform: uppercase;
             letter-spacing: 1.4px;
             transition: all 0.3s;
+            @include medium-screens {
+              padding: 7px 22px;
+              font-size: 12px;
+            }
 
             &:hover {
               transform: skew(-10deg);
@@ -83,6 +94,10 @@
         &:hover .hov {
           animation: uprise 0.6s forwards;
         }
+      }
+
+      @include small-screens {
+        flex: 0 0 50%;
       }
     }
   }

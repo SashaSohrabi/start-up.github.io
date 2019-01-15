@@ -44,6 +44,10 @@ html body .btn {
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
+@media only screen and (max-width: 768px) {
+  html body .btn {
+    padding: 15px 25px; } }
+
 html body .btn:hover {
   background: rgba(250, 250, 250, 0.5); }
 
@@ -281,13 +285,28 @@ html body .sc-desc {
   font-family: "Roboto Slab", Montserrat;
   font-size: 48px;
   text-transform: uppercase;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  letter-spacing: 1px; }
+
+@media only screen and (max-width: 768px) {
+  .welcome__content h2 {
+    font-size: 38px; } }
+
+@media only screen and (max-width: 480px) {
+  .welcome__content h2 {
+    font-size: 28px;
+    letter-spacing: 1.5px; } }
 
 .welcome__content h3 {
   font-family: "Roboto Slab", Montserrat;
   font-size: 20px;
   text-transform: capitalize;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  letter-spacing: 1px; }
+
+@media only screen and (max-width: 768px) {
+  .welcome__content h3 {
+    font-size: 16px; } }
 
 .services {
   text-align: center; }

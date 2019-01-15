@@ -378,13 +378,17 @@ html body .sc-desc {
   background-color: #f8f8f8;
   margin-bottom: 100px; }
 
+.about img {
+  height: 100%;
+  width: 100%; }
+
 .about__hov {
   position: absolute;
   opacity: 0;
   top: 0;
   left: 0;
-  height: 250px;
-  width: 263px;
+  height: 100%;
+  width: 100%;
   background-color: rgba(85, 85, 85, 0.5);
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
@@ -400,8 +404,7 @@ html body .sc-desc {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 120px;
-  top: 190px;
+  top: 80%;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -426,7 +429,8 @@ html body .sc-desc {
   position: relative;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s; }
+  transition: 0.3s;
+  width: 100%; }
 
 .about .inner-wrapper:hover .about__hov {
   opacity: 1; }

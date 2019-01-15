@@ -432,6 +432,11 @@ html body .sc-desc {
   transition: 0.3s;
   width: 100%; }
 
+@media only screen and (max-width: 576px) {
+  .about .inner-wrapper {
+    width: 90%;
+    margin: 0 auto; } }
+
 .about .inner-wrapper:hover .about__hov {
   opacity: 1; }
 
@@ -514,9 +519,25 @@ html body .sc-desc {
   right: 10px;
   z-index: 10; }
 
+@media only screen and (max-width: 576px) {
+  .slick-next {
+    right: 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .slick-next {
+    right: 30px; } }
+
 .slick-prev {
   left: 10px;
   z-index: 10; }
+
+@media only screen and (max-width: 576px) {
+  .slick-prev {
+    left: 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .slick-prev {
+    left: 30px; } }
 
 .slick-prev,
 .slick-next {
@@ -846,7 +867,7 @@ html body .sc-desc {
       -ms-transform: scale(1.2);
           transform: scale(1.2); }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 480px) {
   .brands__logo-container .brands__logo {
     padding: 10px;
     max-width: 33%;

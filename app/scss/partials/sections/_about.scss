@@ -48,6 +48,10 @@
     position: relative;
     transition: 0.3s;
     width: 100%;
+    @include small-screens {
+      width: 90%;
+      margin: 0 auto;
+    }
   }
 
   .inner-wrapper:hover .about__hov {
@@ -112,11 +116,23 @@
 .slick-next {
   right: 10px;
   z-index: 10;
+  @include small-screens {
+    right: 20px;
+  }
+  @include extra-small-screens {
+    right: 30px;
+  }
 }
 
 .slick-prev {
   left: 10px;
   z-index: 10;
+  @include small-screens {
+    left: 20px;
+  }
+  @include extra-small-screens {
+    left: 30px;
+  }
 }
 
 .slick-prev,
